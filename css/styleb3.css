@@ -1,0 +1,171 @@
+/*-- CSS Reset --*/
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 102%;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-- Main structural styling--*/
+
+body {
+     background: #f7f7f7;
+     color: #333333;
+     font-family: mr-eaves-modern, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+}
+
+section , header, footer {
+  width: : 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+/*-- Styling typography --*/
+
+h1, h2, blockquote {
+  color: #1F908B;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p, blockquote {
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.dark p
+{
+  color: #f7f7f7
+}
+
+
+h1 {
+  font-size: 5.653rem;
+  margin-top: 2em;
+}
+
+h2 {
+  font-size:1.999rem;
+  margin:3em 0 1em 0;
+}
+
+
+.dark h2 {
+  color: #EBEBE0
+}
+
+header h2 {
+  font-size: 2.827rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+header p {
+  font-size: 1.3rem
+}
+
+blockquote {
+  font-size: 1.414rem;
+  font-style: italic;
+  hanging-punctuation: first;
+  text-indent: -0.75rem;
+}
+
+cite {
+  font-size: 0.8em;
+  color: #333333;
+  font-style: normal;
+}
+
+/*-- styling links --*/
+a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fc8ebf;
+  border-bottom: 2px dotted;
+}
+
+/*----boxes for links---*/
+a:link, a:visited {
+  background-color: #2F6C7A;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff2b0;
+  padding: 2em 0;
+  font-size: 0.75rem;
+}
+
+
+nav ul {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+  color: #f7f7f7;
+}
+
+nav a {
+  color: #333333;
+}
+
+nav a:hover {
+  border-bottom: none;
+  color: #fc8ebf;
+  transition: all 0.3s ease-in-out
+}
+
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin:6em 0 3em 0;
+  color: #f7f7f7;
+}
+
+/*--colored panels--*/
+  .light {background: #fff2b0;
+    padding: 3em 0;
+  }
+
+  .dark {background: #2F4858;
+    padding: 3em 0;
+  }
+
+
+  img {
+    display: block;
+    margin: 4em 0;
+    padding: 0;
+    max-width: 100%;
+    margin-left: 25.5rem;
+    border-radius: 10px;
+  }
