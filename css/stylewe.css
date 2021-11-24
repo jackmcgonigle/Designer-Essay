@@ -7,21 +7,20 @@
   line-height: 1em;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 /*-- Main structural styling--*/
 
 body {
-     background: #f7f7f7;
-     color: #333333;
+     background: #000000;   /*---yellow banner behind title---*/
+     color: #f7f7f7; /*--text color in first panel---*/
      font-family: mr-eaves-modern, sans-serif;
      font-weight: 300;
      font-style: normal;
+     background: url(file:///Users/jackmcgonigle/Desktop/GitHub/Essay/final/SVG/Layer%201.svg);
+     background-size: 5000px;
 }
 
-section , header, footer {
+section , head, footer {
   width: : 80%;
   max-width: 700px;
   margin: auto;
@@ -30,26 +29,45 @@ section , header, footer {
 /*-- Styling typography --*/
 
 h1, h2, blockquote {
-  color: #1F908B;
+  color: #A8201A;
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
+
 
 p, blockquote {
   margin-bottom: 1.5rem;
   line-height: 1.4;
 }
 
+/*--colored panels--*/
+  .light {background: #DBC2CF;
+    padding: 3em 0;
+  }
+
+  .dark {background: #2F4858;
+    padding: 3em 0;
+  }
+
 .dark p
 {
-  color: #f7f7f7
+  color: #f7f7f7;   /*---text color within dark area---*/
+}
+
+
+.dark h2 {
+  color: #f7f7f7; /*---heading colour within dark section---*/
 }
 
 
 h1 {
   font-size: 5.653rem;
-  margin-top: 2em;
+  margin-top: 0em;
+  margin-left: 0em;
+  text-align: center;
+  display: inline-block;
+  padding-top: 2em;
 }
 
 h2 {
@@ -58,9 +76,6 @@ h2 {
 }
 
 
-.dark h2 {
-  color: #EBEBE0
-}
 
 header h2 {
   font-size: 2.827rem;
@@ -99,25 +114,41 @@ a:hover {
 
 /*----boxes for links---*/
 a:link, a:visited {
-  background-color: #2F6C7A;
+  background-color: #000000;
   color: white;
   padding: 8px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 20px;
+  box-shadow: 5px 2px;
+  opacity: 80%;
+}
+
+/*----boxes for links copy for trying to seperate boxes---*/
+a.d :link, a:visited {
+  background-color: #000000;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 5px 2px;
+  opacity: 80%;
 }
 
 
-nav {
+nav {     /*--banner behind the links at very top---*/
   position: fixed;
   top: 0;
   left: 0;
   margin: 0;
   width: 100%;
-  background: #fff2b0;
+  background: #000000;
   padding: 2em 0;
   font-size: 0.75rem;
+  opacity: 50%;
 }
 
 
@@ -151,15 +182,6 @@ footer {
   color: #f7f7f7;
 }
 
-/*--colored panels--*/
-  .light {background: #fff2b0;
-    padding: 3em 0;
-  }
-
-  .dark {background: #2F4858;
-    padding: 3em 0;
-  }
-
 
   img {
     display: block;
@@ -168,4 +190,14 @@ footer {
     max-width: 100%;
     margin-left: 25.5rem;
     border-radius: 10px;
+  }
+
+
+
+  .boxed {
+    background-color: #333333;
+    border: 1px solid #333333;
+    opacity: 97%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
