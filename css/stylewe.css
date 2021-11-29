@@ -42,11 +42,11 @@ p, blockquote {
 }
 
 /*--colored panels--*/
-  .light {background: #DBC2CF;
+  .light {background: #2F4858;
     padding: 3em 0;
   }
 
-  .dark {background: #2F4858;
+  .dark {background: #000000;
     padding: 3em 0;
   }
 
@@ -60,6 +60,13 @@ p, blockquote {
   color: #f7f7f7; /*---heading colour within dark section---*/
 }
 
+/*--panel behind titile--*/
+  .boxed {
+    background-color: #000000;
+    opacity: 97%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 
 h1 {
   font-size: 5.653rem;
@@ -97,8 +104,9 @@ blockquote {
 
 cite {
   font-size: 0.8em;
-  color: #333333;
+  color: #f7f7f7;
   font-style: normal;
+  opacity: 80%;
 }
 
 /*-- styling links --*/
@@ -114,17 +122,11 @@ a:hover {
 
 /*----boxes for links---*/
 a:link, a:visited {
-  background-color: #000000;
   color: white;
   padding: 8px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 20px;
-  box-shadow: 5px 2px;
-  opacity: 80%;
 }
-
 
 
 nav {     /*--banner behind the links at very top---*/
@@ -178,15 +180,4 @@ footer {
     max-width: 100%;
     margin-left: 25.5rem;
     border-radius: 10px;
-  }
-
-
-
-
-  .boxed {
-    background-color: #333333;
-    border: 1px solid #333333;
-    opacity: 97%;
-    margin-left: 15%;
-    margin-right: 15%;
   }
