@@ -26,6 +26,11 @@ section , head, footer {
   margin: auto;
 }
 
+.gridimage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr))
+}
+
 /*-- Styling typography --*/
 
 h1, h2, blockquote {
@@ -178,6 +183,5 @@ footer {
     margin: 4em 0;
     padding: 0;
     max-width: 100%;
-    margin-left: 25.5rem;
     border-radius: 10px;
   }
