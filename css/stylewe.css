@@ -11,9 +11,9 @@
 /*-- Main structural styling--*/
 
 body {
-     background: #000000;   /*---banner behind title---*/
-     color: #f7f7f7; /*--text color in first panel---*/
-     font-family: mr-eaves-modern, sans-serif;
+     background-image: image();   /*---banner behind title---*/
+     color: #CC1100; /*--text color in first panel---*/
+     font-family: itc-avant-garde-gothic-pro, sans-serif;
      font-weight: 300;
      font-style: normal;
      background: url(file:///Users/jackmcgonigle/Desktop/GitHub/Essay/final/SVG/Layer%201.svg);
@@ -33,13 +33,16 @@ section , head, footer {
 
 /*-- Styling typography --*/
 
-h1, h2, blockquote {
-  color: #f7f7f7;
+h1, h2,  {
+  color: #CC1100;
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
+blockquote, h3 {
+color: #000000;
+}
 
 p, blockquote {
   margin-bottom: 1.5rem;
@@ -47,7 +50,7 @@ p, blockquote {
 }
 
 /*--colored panels--*/
-  .light {background: #2F4858;
+  .light {background: #f7f7f7;
     padding: 3em 0;
   }
 
@@ -61,16 +64,25 @@ p, blockquote {
 }
 
 
+.light h2 {
+  color: #000000; /*---heading colour within light section---*/
+}
+
+.light p
+{
+  color: #000000;   /*---text color within light area---*/
+}
+
+
 .dark h2 {
   color: #f7f7f7; /*---heading colour within dark section---*/
 }
 
-/*--panel behind titile--*/
+/*--panel behind text--*/
   .boxed {
+    background-image: image(essay1/yell);
     background-color: #000000;
     opacity: 97%;
-    margin-left: 15%;
-    margin-right: 15%;
   }
 
 h1 {
@@ -101,14 +113,14 @@ header p {
 }
 
 blockquote {
-  font-size: 1.414rem;
+  font-size: 1.9rem;
   font-style: italic;
   hanging-punctuation: first;
   text-indent: -0.75rem;
 }
 
 cite {
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #f7f7f7;
   font-style: normal;
   opacity: 80%;
@@ -185,3 +197,40 @@ footer {
     max-width: 100%;
     border-radius: 10px;
   }
+
+  /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
