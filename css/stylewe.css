@@ -11,16 +11,12 @@
 /*-- Main structural styling--*/
 
 body {
-     background-image: image();   /*---banner behind title---*/
+     background: #f7f7f7;
      color: #CC1100; /*--text color in first panel---*/
      font-family: itc-avant-garde-gothic-pro, sans-serif;
-     font-weight: 300;
-     font-style: normal;
-     background: url(file:///Users/jackmcgonigle/Desktop/GitHub/Essay/final/SVG/Layer%201.svg);
-     background-size: 5000px;
 }
 
-section , head, footer {
+section , header {
   width: : 80%;
   max-width: 700px;
   margin: auto;
@@ -233,4 +229,4 @@ footer {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-} 
+}
