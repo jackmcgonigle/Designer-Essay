@@ -11,9 +11,11 @@
 /*-- Main structural styling--*/
 
 body {
-     background: #f7f7f7;
-     color: #CC1100; /*--text color in first panel---*/
-     font-family: itc-avant-garde-gothic-pro, sans-serif;
+  width: 100%;
+  background: #000000;
+  color: #CC1100; /*--text color in first panel---*/
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+
 }
 
 section , header {
@@ -206,9 +208,13 @@ footer {
   }
 
 
-@media (max-width: 1112px) {
+
+
+
+@media only screen and (max-width: 1112px) {
 
   body {
+
 
   }
 
@@ -217,13 +223,76 @@ footer {
 
   }
 
+  .img-banner {
+  margin-top: 0.8rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
 }
-@media only screen and (max-width: 650px) {
 
-    h1 {
-        font-size: 3rem
-    }
+@media only screen and (max-width: 1024px) {
+  body {
+margin-left: 30%;
+margin-right:30%;
+  }
+h1 {
+  font-size: 4rem;
 
-    header h2 {
-        font-size: 1.5rem
-    }
+  }
+.img-banner {
+  margin-top: 1.55rem;
+  }
+nav ul {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+body {
+  }
+h1 {
+  font-size: 4rem;
+
+  }
+.img-banner {
+  margin-top: 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  body {
+  display: flex;
+
+  }
+
+  h1 {
+  font-size: 4rem;
+
+  }
+
+  p {
+  margin-left: inherit;
+  margin-right: inherit;
+
+
+  }
+  .img-banner {
+  margin-top: 0.8rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+}
