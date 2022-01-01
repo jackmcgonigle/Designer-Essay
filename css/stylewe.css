@@ -22,36 +22,35 @@ section , header {
   margin: auto;
 }
 
-.gridimage {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr))
-}
-
-/*-- Styling typography --*/
-
-h1, h2,  {
-  color: #CC1100;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-blockquote, h3 {
-color: #000000;
-}
-
-p, blockquote {
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
+section {
+  margin-top: -1rem;
 }
 
 /*--colored panels--*/
-  .light {background: #f7f7f7;
+  .light {
+    background: #f7f7f7;
     padding: 3em 0;
   }
 
-  .dark {background: #000000;
+  .dark {
+    background: #000000;
     padding: 3em 0;
+  }
+
+  .header {
+    background: #000000;
+    padding: 3em 0;
+  }
+
+  .header h2 {
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .img-banner {
+    margin-top: -1.6rem;
+    padding-top: 2em;
   }
 
 .dark p
@@ -64,30 +63,62 @@ p, blockquote {
   color: #000000; /*---heading colour within light section---*/
 }
 
-.light p
-{
+.light p {
   color: #000000;   /*---text color within light area---*/
 }
-
 
 .dark h2 {
   color: #f7f7f7; /*---heading colour within dark section---*/
 }
 
-/*--panel behind text--*/
-  .boxed {
-    background-image: image(essay1/yell);
-    background-color: #000000;
-    opacity: 97%;
-  }
+.light blockquote {
+  color: #CC1100;
+  font-size: 2.1rem;
+  font-style: italic;
+  hanging-punctuation: first;
+  text-indent: -0.75rem;
+  padding-top: 1em;
+}
+
+.light figcaption {
+  color: #942911;
+  font-size: 1em;
+  opacity: 80%;
+  text-align: right;
+  padding-bottom: 4em;
+}
+
+.gridimage {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  padding-top: 0.5em;
+}
+
+.collection {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.office {
+ margin-bottom: -60px;
+}
+/*---tyling typography---*/
+
+p, blockquote, h1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
 
 h1 {
+  color: #cc1100;
   font-size: 5.653rem;
-  margin-top: 0em;
-  margin-left: 0em;
   text-align: center;
-  display: inline-block;
-  padding-top: 2em;
+  padding-top: .5em;
+  line-height: 1.25em;
 }
 
 h2 {
@@ -95,32 +126,6 @@ h2 {
   margin:3em 0 1em 0;
 }
 
-
-
-header h2 {
-  font-size: 2.827rem;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 1.5em;
-}
-
-header p {
-  font-size: 1.3rem
-}
-
-blockquote {
-  font-size: 1.9rem;
-  font-style: italic;
-  hanging-punctuation: first;
-  text-indent: -0.75rem;
-}
-
-cite {
-  font-size: 0.6em;
-  color: #f7f7f7;
-  font-style: normal;
-  opacity: 80%;
-}
 
 /*-- styling links --*/
 a {
@@ -183,13 +188,12 @@ footer {
   font-size: 0.8rem;
   margin:6em 0 3em 0;
   color: #f7f7f7;
+  margin-bottom: 1;
 }
-
 
   img {
     display: block;
     margin: 4em 0;
-    padding: 0;
     max-width: 100%;
     border-radius: 10px;
   }
