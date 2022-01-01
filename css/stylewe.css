@@ -233,7 +233,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 1098px) {
+@media only screen and (max-width: 1024px) {
   body {
 margin-left: 30%;
 margin-right:30%;
@@ -252,26 +252,52 @@ nav ul {
 
 }
 
+@media only screen and (max-width: 800px) {
 
+body {
+  margin-left: 30%;
+  margin-right:30%;
+  vertical-align: middle;
+  }
+h1 {
+  font-size: 4rem;
 
-  @media only screen and (max-width: 650px) {
+  }
+.img-banner {
+  margin-top: 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
 
   body {
     margin-left: 30%;
     margin-right:30%;
     vertical-align: middle;
-    font-size: 70%;
-    }
+  display: flex;
+
+  }
+
   h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 
-    }
+  }
+
+
+
+
+
   .img-banner {
-    margin-top: 1.5rem;
-    }
+  margin-top: 0.8rem;
+  }
 
-    nav ul {
-      display: flex;
-    }
+  nav ul {
+    display: flex;
+  }
 
 }
