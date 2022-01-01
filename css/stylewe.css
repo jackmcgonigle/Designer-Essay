@@ -237,6 +237,7 @@ footer {
   body {
 margin-left: 30%;
 margin-right:30%;
+vertical-align: middle;
   }
 h1 {
   font-size: 4rem;
@@ -254,6 +255,9 @@ nav ul {
 @media only screen and (max-width: 800px) {
 
 body {
+  margin-left: 30%;
+  margin-right:30%;
+  vertical-align: middle;
   }
 h1 {
   font-size: 4rem;
@@ -272,6 +276,9 @@ h1 {
 @media only screen and (max-width: 375px) {
 
   body {
+    margin-left: 30%;
+    margin-right:30%;
+    vertical-align: middle;
   display: flex;
 
   }
@@ -281,12 +288,10 @@ h1 {
 
   }
 
-  p {
-  margin-left: inherit;
-  margin-right: inherit;
 
 
-  }
+
+
   .img-banner {
   margin-top: 0.8rem;
   }
