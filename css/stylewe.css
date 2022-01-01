@@ -273,10 +273,9 @@ h1 {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen only (max-width: 375px) {
 
   body {
-    margin-left: 30%;
     margin-right:30%;
     vertical-align: middle;
   display: flex;
