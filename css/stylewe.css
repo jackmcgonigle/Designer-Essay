@@ -272,31 +272,3 @@ h1 {
   }
 
 }
-
-@media only screen only (max-width: 375px) {
-
-  body {
-    margin-right:30%;
-    vertical-align: middle;
-  display: flex;
-
-  }
-
-  h1 {
-  font-size: 4rem;
-
-  }
-
-
-
-
-
-  .img-banner {
-  margin-top: 0.8rem;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-}
