@@ -252,23 +252,26 @@ nav ul {
 
 }
 
-@media only screen and (max-width: 800px) {
 
-body {
-  margin-left: 30%;
-  margin-right:30%;
-  vertical-align: middle;
-  }
-h1 {
-  font-size: 4rem;
 
-  }
-.img-banner {
-  margin-top: 1.5rem;
-  }
+  @media only screen and (max-width: 650px) {
 
-  nav ul {
-    display: flex;
-  }
+  body {
+    margin-left: 30%;
+    margin-right:30%;
+    vertical-align: middle;
+    font-size: 70%;
+    }
+  h1 {
+    font-size: 4rem;
+
+    }
+  .img-banner {
+    margin-top: 1.5rem;
+    }
+
+    nav ul {
+      display: flex;
+    }
 
 }
